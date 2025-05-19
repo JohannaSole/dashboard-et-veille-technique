@@ -1,0 +1,29 @@
+# Ce fichier .dockerignore spécifie les fichiers et répertoires à ignorer lors de la construction
+# de l'image Docker. Il permet d'exclure les fichiers temporaires, les environnements virtuels,
+# les données non nécessaires pour l'API, ainsi que les fichiers utilisés uniquement pour le développement
+# et l'entraînement local, afin de réduire la taille de l'image Docker et d'améliorer l'efficacité.
+
+# Fichiers Python compilés
+__pycache__        # Ignorer le répertoire __pycache__ où Python stocke le bytecode compilé
+*.pyc              # Ignorer les fichiers .pyc, qui sont des fichiers bytecode Python compilés
+*.pyo              # Ignorer les fichiers .pyo, fichiers bytecode Python optimisés
+*.pyd              # Ignorer les fichiers .pyd, bibliothèques dynamiques Python spécifiques à Windows
+
+# Répertoires et fichiers temporaires générés par Jupyter
+.ipynb_checkpoints
+
+# Cache utilisé par pytest pour les tests unitaires, inutile dans l'image Docker
+.pytest_cache
+
+# Environnements virtuels utilisés localement, ne sont pas nécessaires dans l'image Docker
+env/** # Ignorer tout le contenu du dossier mon-environnement
+
+# Fichiers de données non nécessaires pour l'API (CSV et ODS)
+*.csv
+*.ods
+
+# Notebooks Jupyter (fichiers .ipynb)
+*.ipynb
+
+# Fichier de configuration git
+.gitignore
