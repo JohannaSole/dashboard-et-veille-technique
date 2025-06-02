@@ -35,7 +35,6 @@ Créer un dashboard interactif connecté à une **API de prédiction** afin de :
 │   └── main.py                      # API FastAPI exposant le modèle
 ├── dashboard/
 │   ├── dashboard.py                   # Application Streamlit
-│   ├── main.py                        # API FastAPI exposant le modèle
 │   ├── api_data.pkl                   # Données d’entrée simulées pour l’API
 │   ├── feature_dictionary.csv         # Dictionnaire des variables
 │   ├── model_features_config.json     # Configuration des variables utilisées
