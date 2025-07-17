@@ -1,34 +1,19 @@
-## 📊 Dashboard de Crédit Scoring & Veille Technique NLP
+# Projet 8 – Dashboard de Crédit Scoring & Veille Technique NLP
 
-Bienvenue dans ce dépôt contenant deux livrables complémentaires réalisés dans le cadre du **Projet 8 - OpenClassrooms : Réalisez un dashboard et assurez une veille technique**.
+## 1. Dashboard interactif de crédit scoring
 
----
+### Objectif
 
-### Contexte
+Développer un dashboard interactif connecté à une API de prédiction pour :
 
-Vous êtes **Data Scientist chez "Prêt à dépenser"**, une entreprise de crédits à la consommation pour des personnes avec peu ou pas d'historique de prêt.
+- Visualiser le score de crédit et sa probabilité (proximité du seuil de décision)  
+- Interpréter les résultats avec SHAP  
+- Afficher les principales informations clients  
+- Comparer un client à des groupes similaires  
+- Respecter les critères d’accessibilité (WCAG)  
+- Déployer en environnement cloud (Docker-ready)  
 
-Votre mission comporte **deux volets** :
-
-1. **Développer un dashboard de crédit scoring** pour aider les chargés de relation client à expliquer les décisions d’octroi de crédit.
-2. **Effectuer une veille technique** sur un modèle récent de traitement de données textuelles.
-
----
-
-##  1. Dashboard interactif de crédit scoring
-
-### 🎯 Objectif
-
-Créer un dashboard interactif connecté à une **API de prédiction** afin de :
-
-* Visualiser le score et sa probabilité (proximité du seuil de décision),
-* Interpréter les résultats de manière intelligible (SHAP),
-* Afficher les principales informations d’un client,
-* Comparer ce client à des groupes similaires,
-* Respecter des critères d’**accessibilité (WCAG)**,
-* Être déployé sur le Cloud (Docker-ready).
-
-###  Structure technique
+### Structure technique
 
 ```
 ├── api/
@@ -50,36 +35,31 @@ Créer un dashboard interactif connecté à une **API de prédiction** afin de :
 Le dashboard est accessible à l'adresse suivante :
 👉 [https://mon-dashboard.azurewebsites.net](https://projet8-dashboard-h9ancgetd4cmbjdr.westeurope-01.azurewebsites.net/) (actuellement désactivé)
 
-##  2. Veille technique – NLP pour classification de produits
+## 2. Veille technique – NLP pour classification de produits
 
-### 🎯 Objectif
+### Objectif
 
-Tester une **technique récente de NLP (moins de 5 ans)** pour automatiser la classification de produits à partir de leur description textuelle.
+Tester une technique récente de NLP (moins de 5 ans) pour automatiser la classification de produits à partir de descriptions textuelles.
 
-### Détails
+### Données et modèles
 
-* **Jeu de données** : Descriptions de produits e-commerce (Place de marché)
-* **Objectif** : Automatiser la catégorisation des produits
-* **Modèles comparés** :
+- Jeu de données : descriptions produits e-commerce (Place de marché)  
+- Modèles comparés :  
+  - DistilBERT (Hugging Face, 2019)  
+  - DeBERTa (Microsoft, 2021)  
 
-  * DistilBERT (Hugging Face, 2019)
-  * DeBERTa (Microsoft, 2021)
+### Fichiers associés
 
-###  Fichiers associés
+- `Sole_Johanna_2_notebook_veille_052025.ipynb` : notebook d’expérimentation  
+- `Sole_Johanna_3_note_méthodologique_052025.pdf` : note méthodologique  
 
-* `Sole_Johanna_2_notebook_veille_052025.ipynb` : Notebook de veille et expérimentation
-* `Sole_Johanna_3_note_méthodologique_052025.pdf` : Note méthodologique accompagnant la veille
+## Résultats clés
 
----
-
-## ✅ Résultats clés
-
-* Un **dashboard ergonomique** permettant une interprétation simple des décisions d’octroi de crédit.  
-* Une **API fonctionnelle** exposant un modèle de scoring.  
-* Une preuve de concept NLP comparant deux modèles pré-entraînés, DistilBERT et DeBERTa, pour la classification automatique de descriptions produits :  
-
-  - DistilBERT offre de bonnes performances et une capacité satisfaisante de généralisation.  
-  - DeBERTa, dans la configuration actuelle, présente des performances plus faibles mais une analyse fine de ses embeddings ouvre des pistes pour des améliorations futures.
+- Dashboard ergonomique facilitant l’interprétation des décisions de crédit  
+- API fonctionnelle exposant un modèle de scoring  
+- Preuve de concept NLP comparant DistilBERT et DeBERTa pour classification automatique :  
+  - DistilBERT présente de bonnes performances et une bonne généralisation  
+  - DeBERTa a des performances plus faibles dans cette configuration, mais l’analyse de ses embeddings suggère des pistes d’amélioration
 
 ## 📄 Auteurs
 
