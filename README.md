@@ -1,4 +1,4 @@
-# Projet 8 – Dashboard de Crédit Scoring & Veille Technique NLP
+# Dashboard de Crédit Scoring & Veille Technique NLP
 
 ## 1. Dashboard interactif de crédit scoring
 
